@@ -13,7 +13,7 @@ import com.nadan.java.city.hospital.Patient;
 public class HospitalMain {
 
 	public static void main(String[] args) {
-		//병원을 하나 만들기
+		//병원을 객체 하나 만들기
 		Hospital hospital1 = new Hospital();
 		hospital1.color = "white";
 		hospital1.door = 100;
@@ -26,7 +26,6 @@ public class HospitalMain {
 		System.out.println();
 
 		//의사를 3명 객체 생성
-		ArrayList<Doctor> docList = new ArrayList<>();
 		Doctor doc1 = new Doctor();
 		doc1.name = "Dr.홍";
 		doc1.gender = "남";
@@ -48,11 +47,9 @@ public class HospitalMain {
 		System.out.println();
 		
 		//각각 다른 방향으로 움직이는 간호사 6명 객체
-		ArrayList<Nurs> nurList = new ArrayList<>();
 		Nurs nurs1 = new Nurs();
 		nurs1.name = "mr.양";
 		nurs1.gender = "남";
-		nurs1.skinColor = "흑인";
 		nurs1.hairColor = "주황";
 		System.out.print("간호사 1 : ");
 		for(int i=0; i<20; i++){
@@ -69,7 +66,6 @@ public class HospitalMain {
 		Nurs nurs2 = new Nurs();
 		nurs2.name = "mr.조";
 		nurs2.gender = "여";
-		nurs2.skinColor = "흑인";
 		nurs2.hairColor = "금색";
 		System.out.print("간호사 2 : ");
 		for(int i=0; i<20; i++){
@@ -86,7 +82,6 @@ public class HospitalMain {
 		Nurs nur3 = new Nurs();
 		nur3.name = "mr.김";
 		nur3.gender = "남";
-		nur3.skinColor = "흑인";
 		nur3.hairColor = "초록";
 		System.out.print("간호사 3 : ");
 		for(int i=0; i<20; i++){
@@ -103,7 +98,6 @@ public class HospitalMain {
 		Nurs nurs4 = new Nurs();
 		nurs4.name = "mr.서";
 		nurs4.gender = "남";
-		nurs4.skinColor = "백인";
 		nurs4.hairColor = "녹색";
 		System.out.print("간호사 4 : ");
 		for(int i=0; i<20; i++){
@@ -120,7 +114,6 @@ public class HospitalMain {
 		Nurs nurs5 = new Nurs();
 		nurs5.name = "mr.최";
 		nurs5.gender = "여";
-		nurs5.skinColor = "코카시안";
 		nurs5.hairColor = "흰색";
 		System.out.print("간호사 5 : ");
 		for(int i=0; i<20; i++){
@@ -137,7 +130,6 @@ public class HospitalMain {
 		Nurs nur6 = new Nurs();
 		nur6.name = "mr.오";
 		nur6.gender = "남";
-		nur6.skinColor = "황인";
 		nur6.hairColor = "파란색";
 		System.out.print("간호사 6 : ");
 		for(int i=0; i<20; i++){
@@ -177,17 +169,7 @@ public class HospitalMain {
 			doc3.diganosis(doc3.name ,list3.get(i), i+1);
 		}
 		System.out.println();
-		
-		
-		Human human = new Human();
-		human.move();
-		
-		Car car = new Car();
-		car.move();
-		
-		Airplain air = new Airplain();
-		air.move();
-		
+
 		
 	}
 

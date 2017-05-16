@@ -1,7 +1,11 @@
 package com.nadan.java.city.design;
 
+//추상 클래스로 지정하는 이유는 이 클래스가 오직 상속으로만 쓰이고, 사람의 공통 속성을 모아 놓은 클래스이기 때문이다.
+//인터페이스로 쓰지 않은 이유도 '속성'을 지정할 수 있고, 움직임 속성을 강제하지 않아도 되며, 움직임 메소드 안에 코딩을 해야 하기 때문이다.
 public abstract class People {
 	
+	//협업할 경우 private로 외부에서 접근하지 못하게 해야 하지만
+	//개인 개발일 경우 퍼포먼스 향상을 위해 사용하지 않아도 된다.
 	public String gender;
 	public int age;
 	public String skinColor;
